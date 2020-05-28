@@ -2,7 +2,7 @@ const {Router} = require('express');
 const router = Router();
 
 const {productController} = require('../../controller');
-const {productMiddleware,productUpdateMiddleware}= require('../../middleware');
+const {productMiddleware}= require('../../middleware');
 
 
 
@@ -12,9 +12,9 @@ router.get('/',productController.getAllProduct);
 
 router.get('/:id',productController.getProductById);
 
-router.put('/',productUpdateMiddleware,productController.updateProduct);
+router.put('/',productMiddleware,productController.updateProduct);
 
-router.delete('/:id',productUpdateMiddleware,productController.deleteProduct);
+router.delete('/:id',productController.deleteProduct);
 
 
 
