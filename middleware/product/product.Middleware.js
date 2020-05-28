@@ -8,7 +8,7 @@ module.exports = (req, res, next) => {
             throw new Error()
         }
 
-        if (price < 0) {
+        if (price < 0 || price > 9999)  {
             throw new Error()
         }
 

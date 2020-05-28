@@ -35,11 +35,11 @@ module.exports = {
     },
 
 
-    deleteProduct: ( name ) => {
+    deleteProduct: ( id ) => {
         const ProductModel = db.getModel('Product');
 
         return ProductModel.destroy({
-            where: { name }
+            where: { id }
         })
     }
 

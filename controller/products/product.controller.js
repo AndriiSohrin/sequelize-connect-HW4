@@ -32,10 +32,10 @@ module.exports = {
 
 
     deleteProduct: async (req, res) => {
-        const name = req.params.name;
+        const id = req.params.id;
 
         try {
-            await productService.deleteProduct(name)
+            await productService.deleteProduct( id )
         } catch (e) {
             res.json(e)
         }

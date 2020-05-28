@@ -13,6 +13,14 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AndriiSohrin/sequelize-connect-HW4.git"
+  },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AndriiSohrin/sequelize-connect-HW4/issues"
+  },
+  "homepage": "https://github.com/AndriiSohrin/sequelize-connect-HW4#readme"
 }
